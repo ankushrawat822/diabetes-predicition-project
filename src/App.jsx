@@ -1,11 +1,12 @@
 import { useState } from 'react'
-
-
+import Navbar from './Navbar'
+import Form from './Form'
 function App() {
  
   return (
     <>
-      <p className='bg-red-600'>helo</p>
+       <Navbar></Navbar>
+       <Form></Form>
     </>
   )
 }
