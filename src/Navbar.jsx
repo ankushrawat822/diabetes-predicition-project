@@ -14,7 +14,6 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['Products'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const Navbar = () => {
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -37,7 +36,7 @@ const Navbar = () => {
 
   return (
     <>
-        <AppBar  position="static">
+        <AppBar   position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

@@ -3,6 +3,7 @@ import { TextField , Button} from '@mui/material'
 import { useFormik } from 'formik'
 import { dataSchema } from './schemas'
 const Form = () => {
+
     let initialValues = {
       Number_of_Pregnancies : "",
       Glucose_Level : "",
@@ -10,18 +11,29 @@ const Form = () => {
       Skin_Thickness_value : "" ,
       Insulin_Level : ""
     }
-
-   const {handleBlur , errors , touched , handleChange , values , handleSubmit} = useFormik({
+  
+    const {handleBlur , errors , touched , handleChange , values , handleSubmit} = useFormik({
     initialValues : initialValues,
     validationSchema : dataSchema,
     onSubmit : (values , action)=>{
        console.log(values)
+
        action.resetForm()
     }
     
    })
    
-  //  console.log(errors)
+  //  const formik = useFormik({
+  //   initialValues : initialValues,
+  //   validationSchema : dataSchema,
+  //   onSubmit : (values , action)=>{
+  //      console.log(values)
+  //      action.resetForm()
+  //   }
+    
+  //  })
+   
+  
 
   return (
     <>
