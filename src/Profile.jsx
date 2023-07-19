@@ -54,7 +54,7 @@ const Profile = () => {
                     {/* input 3 */}
                     <input name="gender" className='text-[20px] sm:text-[25px] profile-input-border py-3 pl-5 '
                         placeholder='Gender'
-                        type="number"
+                        type="text"
                         value={values.gender}
                         onChange={handleChange}
                         onBlur={handleBlur} />

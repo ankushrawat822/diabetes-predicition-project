@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
 
-       <div className='bg-[#f2ead3] w-[100vw] h-[80px] flex py-4 items-center justify-center box-shadow-navbar  '>
+       <div className='fixed z-20 t-0 bg-[#f2ead3] w-[100vw] h-[80px] flex py-4 items-center justify-center box-shadow-navbar  '>
         <img src={logo} className='w-[150px] h-[50px] ' alt="Logo" />
        </div> 
     </>
